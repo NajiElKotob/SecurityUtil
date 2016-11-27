@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityUtil", "SecurityUtil\SecurityUtil.csproj", "{1C30D590-1619-49BD-8E26-C880D15EC113}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityUtil.Win", "SecurityUtil.Win\SecurityUtil.Win.csproj", "{5A4284DE-E189-46B2-A923-413036240C14}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C30D590-1619-49BD-8E26-C880D15EC113}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C30D590-1619-49BD-8E26-C880D15EC113}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C30D590-1619-49BD-8E26-C880D15EC113}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C30D590-1619-49BD-8E26-C880D15EC113}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A4284DE-E189-46B2-A923-413036240C14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A4284DE-E189-46B2-A923-413036240C14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A4284DE-E189-46B2-A923-413036240C14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A4284DE-E189-46B2-A923-413036240C14}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
