@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityUtil", "SecurityUti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityUtil.Win", "SecurityUtil.Win\SecurityUtil.Win.csproj", "{5A4284DE-E189-46B2-A923-413036240C14}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityUtilTests", "SecurityUtilTests\SecurityUtilTests.csproj", "{AEE0E365-4191-4186-ACEA-80CE7E875C10}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5A4284DE-E189-46B2-A923-413036240C14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A4284DE-E189-46B2-A923-413036240C14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A4284DE-E189-46B2-A923-413036240C14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEE0E365-4191-4186-ACEA-80CE7E875C10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEE0E365-4191-4186-ACEA-80CE7E875C10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEE0E365-4191-4186-ACEA-80CE7E875C10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEE0E365-4191-4186-ACEA-80CE7E875C10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
