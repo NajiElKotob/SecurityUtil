@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1C30D590-1619-49BD-8E26-C880D15EC113}</ProjectGuid>
+    <ProjectGuid>{75ACF8D5-9263-4AA3-91CC-FF8C9673A951}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DotNETHeroes.SecurityUtil</RootNamespace>
-    <AssemblyName>DotNETHeroes.SecurityUtil</AssemblyName>
+    <RootNamespace>ErrorLogUtil</RootNamespace>
+    <AssemblyName>ErrorLogUtil</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -32,7 +32,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,13 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cryptography\Hashing.cs" />
-    <Compile Include="Cryptography\Randomness.cs" />
-    <Compile Include="Hardware\Processor.cs" />
+    <Compile Include="ErrorLog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Certificates\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

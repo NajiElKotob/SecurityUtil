@@ -80,6 +80,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ErrorLogUtil\ErrorLogUtil.csproj">
+      <Project>{75acf8d5-9263-4aa3-91cc-ff8c9673a951}</Project>
+      <Name>ErrorLogUtil</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SecurityUtil\SecurityUtil.csproj">
+      <Project>{1c30d590-1619-49bd-8e26-c880d15ec113}</Project>
+      <Name>SecurityUtil</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

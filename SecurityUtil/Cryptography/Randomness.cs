@@ -1,12 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DotNETHeroes.SecurityUtil.Cryptography
 {
+    /// <summary>
+    /// Implements a cryptographic and non-cryptographic Random Number Generator (RNG) 
+    /// using the Guid 'Globally Unique Identifier' provided by the cryptographic service provider (CSP).
+    /// </summary>
     public class Randomness
     {
         public enum GuidFormatSpecifier
@@ -20,7 +20,7 @@ namespace DotNETHeroes.SecurityUtil.Cryptography
 
 
         /// <summary>
-        /// 
+        /// Generate a GUID string (32 hexadecimal digits / 128-bit values) with default format.
         /// </summary>
         /// <returns></returns>
         /// <remarks>
@@ -37,9 +37,9 @@ namespace DotNETHeroes.SecurityUtil.Cryptography
 
         public static string RandomKey()
         {
-            RNGCryptoServiceProvider rndk = new RNGCryptoServiceProvider();
+            RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();
             byte[] key = new byte[15];
-            rndk.GetBytes(key);
+            rng.GetBytes(key);
             return BytesToHex(key);
 
         }

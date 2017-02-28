@@ -28,20 +28,68 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnGUID = new System.Windows.Forms.Button();
+            this.txtGUID = new System.Windows.Forms.TextBox();
+            this.btnProcessorId = new System.Windows.Forms.Button();
+            this.txtProcessorId = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
+            // 
+            // btnGUID
+            // 
+            this.btnGUID.Location = new System.Drawing.Point(12, 12);
+            this.btnGUID.Name = "btnGUID";
+            this.btnGUID.Size = new System.Drawing.Size(115, 25);
+            this.btnGUID.TabIndex = 0;
+            this.btnGUID.Text = "GUID";
+            this.btnGUID.UseVisualStyleBackColor = true;
+            this.btnGUID.Click += new System.EventHandler(this.btnGUID_Click);
+            // 
+            // txtGUID
+            // 
+            this.txtGUID.Location = new System.Drawing.Point(133, 15);
+            this.txtGUID.Name = "txtGUID";
+            this.txtGUID.Size = new System.Drawing.Size(269, 22);
+            this.txtGUID.TabIndex = 1;
+            // 
+            // btnProcessorId
+            // 
+            this.btnProcessorId.Location = new System.Drawing.Point(12, 42);
+            this.btnProcessorId.Name = "btnProcessorId";
+            this.btnProcessorId.Size = new System.Drawing.Size(115, 23);
+            this.btnProcessorId.TabIndex = 2;
+            this.btnProcessorId.Text = "Processor Id";
+            this.btnProcessorId.UseVisualStyleBackColor = true;
+            this.btnProcessorId.Click += new System.EventHandler(this.btnProcessorId_Click);
+            // 
+            // txtProcessorId
+            // 
+            this.txtProcessorId.Location = new System.Drawing.Point(133, 43);
+            this.txtProcessorId.Name = "txtProcessorId";
+            this.txtProcessorId.Size = new System.Drawing.Size(269, 22);
+            this.txtProcessorId.TabIndex = 3;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(629, 293);
+            this.Controls.Add(this.txtProcessorId);
+            this.Controls.Add(this.btnProcessorId);
+            this.Controls.Add(this.txtGUID);
+            this.Controls.Add(this.btnGUID);
             this.Name = "frmMain";
             this.Text = "SecurityUtil - Winform Test App";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnGUID;
+        private System.Windows.Forms.TextBox txtGUID;
+        private System.Windows.Forms.Button btnProcessorId;
+        private System.Windows.Forms.TextBox txtProcessorId;
     }
 }
 
