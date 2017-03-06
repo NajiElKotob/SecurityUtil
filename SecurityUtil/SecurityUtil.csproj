@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Cryptography\Hashing.cs" />
     <Compile Include="Cryptography\Randomness.cs" />
+    <Compile Include="Hardware\HardDrive.cs" />
     <Compile Include="Hardware\Processor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
