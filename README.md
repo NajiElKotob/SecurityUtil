@@ -8,9 +8,9 @@ Implements a cryptographic and non-cryptographic Random Number Generator (RNG) u
 Under Development
 
 ### Randomness Class
-GenerateNewGuid
-RandomKey
-BytesToHex
+1. GenerateNewGuid
+2. RandomKey
+3. BytesToHex
 
 ## Hardware
 ### HardDrive Class
