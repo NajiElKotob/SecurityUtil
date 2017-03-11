@@ -15,7 +15,6 @@ Implements a cryptographic and non-cryptographic Random Number Generator (RNG) u
 ### Randomness Class
 1. GenerateNewGuid
 2. RandomKey
-3. BytesToHex
 
 ## Hardware
 ### HardDrive Class
