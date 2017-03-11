@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Security.Cryptography;
+using DotNETHeroes.SecurityUtil.Converter;
 
 namespace DotNETHeroes.SecurityUtil.Cryptography
 {
@@ -40,15 +41,11 @@ namespace DotNETHeroes.SecurityUtil.Cryptography
             RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();
             byte[] key = new byte[15];
             rng.GetBytes(key);
-            return BytesToHex(key);
+            return BytesConverter.BytesToHex(key);
 
         }
 
-        public static string BytesToHex(byte[] byteArray)
-        {
-            return BitConverter.ToString(byteArray).Replace("-", string.Empty).ToLower(); //e.g. 91aa5af59ec329d92c8bab1f4afb1f
-        }
-
+      
 
 
     }

@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Converters\BytesConverter.cs" />
     <Compile Include="Cryptography\Hashing.cs" />
     <Compile Include="Cryptography\Randomness.cs" />
     <Compile Include="Hardware\HardDrive.cs" />

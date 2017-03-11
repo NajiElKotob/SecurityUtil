@@ -36,6 +36,8 @@
             this.btnHardDriveSN = new System.Windows.Forms.Button();
             this.txtHardDriveSN2 = new System.Windows.Forms.TextBox();
             this.btnVSN = new System.Windows.Forms.Button();
+            this.txtHashing = new System.Windows.Forms.TextBox();
+            this.btnComputeHash = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnGUID
@@ -57,7 +59,7 @@
             // 
             // btnProcessorId
             // 
-            this.btnProcessorId.Location = new System.Drawing.Point(12, 42);
+            this.btnProcessorId.Location = new System.Drawing.Point(12, 67);
             this.btnProcessorId.Name = "btnProcessorId";
             this.btnProcessorId.Size = new System.Drawing.Size(156, 23);
             this.btnProcessorId.TabIndex = 2;
@@ -67,21 +69,21 @@
             // 
             // txtProcessorId
             // 
-            this.txtProcessorId.Location = new System.Drawing.Point(174, 43);
+            this.txtProcessorId.Location = new System.Drawing.Point(174, 68);
             this.txtProcessorId.Name = "txtProcessorId";
             this.txtProcessorId.Size = new System.Drawing.Size(269, 22);
             this.txtProcessorId.TabIndex = 3;
             // 
             // txtHardDriveSN1
             // 
-            this.txtHardDriveSN1.Location = new System.Drawing.Point(174, 72);
+            this.txtHardDriveSN1.Location = new System.Drawing.Point(174, 97);
             this.txtHardDriveSN1.Name = "txtHardDriveSN1";
             this.txtHardDriveSN1.Size = new System.Drawing.Size(269, 22);
             this.txtHardDriveSN1.TabIndex = 5;
             // 
             // btnHardDriveSN
             // 
-            this.btnHardDriveSN.Location = new System.Drawing.Point(12, 71);
+            this.btnHardDriveSN.Location = new System.Drawing.Point(12, 96);
             this.btnHardDriveSN.Name = "btnHardDriveSN";
             this.btnHardDriveSN.Size = new System.Drawing.Size(156, 23);
             this.btnHardDriveSN.TabIndex = 4;
@@ -91,14 +93,14 @@
             // 
             // txtHardDriveSN2
             // 
-            this.txtHardDriveSN2.Location = new System.Drawing.Point(174, 101);
+            this.txtHardDriveSN2.Location = new System.Drawing.Point(174, 126);
             this.txtHardDriveSN2.Name = "txtHardDriveSN2";
             this.txtHardDriveSN2.Size = new System.Drawing.Size(269, 22);
             this.txtHardDriveSN2.TabIndex = 7;
             // 
             // btnVSN
             // 
-            this.btnVSN.Location = new System.Drawing.Point(12, 100);
+            this.btnVSN.Location = new System.Drawing.Point(12, 125);
             this.btnVSN.Name = "btnVSN";
             this.btnVSN.Size = new System.Drawing.Size(156, 23);
             this.btnVSN.TabIndex = 6;
@@ -106,11 +108,30 @@
             this.btnVSN.UseVisualStyleBackColor = true;
             this.btnVSN.Click += new System.EventHandler(this.button1_Click);
             // 
+            // txtHashing
+            // 
+            this.txtHashing.Location = new System.Drawing.Point(174, 176);
+            this.txtHashing.Name = "txtHashing";
+            this.txtHashing.Size = new System.Drawing.Size(269, 22);
+            this.txtHashing.TabIndex = 9;
+            // 
+            // btnComputeHash
+            // 
+            this.btnComputeHash.Location = new System.Drawing.Point(12, 173);
+            this.btnComputeHash.Name = "btnComputeHash";
+            this.btnComputeHash.Size = new System.Drawing.Size(156, 25);
+            this.btnComputeHash.TabIndex = 8;
+            this.btnComputeHash.Text = "Hashing \"Hello\"";
+            this.btnComputeHash.UseVisualStyleBackColor = true;
+            this.btnComputeHash.Click += new System.EventHandler(this.btnComputeHash_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(629, 293);
+            this.Controls.Add(this.txtHashing);
+            this.Controls.Add(this.btnComputeHash);
             this.Controls.Add(this.txtHardDriveSN2);
             this.Controls.Add(this.btnVSN);
             this.Controls.Add(this.txtHardDriveSN1);
@@ -136,6 +157,8 @@
         private System.Windows.Forms.Button btnHardDriveSN;
         private System.Windows.Forms.TextBox txtHardDriveSN2;
         private System.Windows.Forms.Button btnVSN;
+        private System.Windows.Forms.TextBox txtHashing;
+        private System.Windows.Forms.Button btnComputeHash;
     }
 }
 

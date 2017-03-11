@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
-using DotNETHeroes.SecurityUtil.Hardware;
-using DotNETHeroes.SecurityUtil.Cryptography;
+using DotNETHeroes.SecurityUtil;
+
 
 namespace SecurityUtil.Win
 {
@@ -14,22 +14,29 @@ namespace SecurityUtil.Win
 
         private void btnGUID_Click(object sender, EventArgs e)
         {
-            txtGUID.Text = Randomness.GenerateNewGuid();
+            txtGUID.Text = DotNETHeroes.SecurityUtil.Cryptography.Randomness.GenerateNewGuid();
         }
 
         private void btnProcessorId_Click(object sender, EventArgs e)
         {
-            txtProcessorId.Text = Processor.ProcessorId();
+            txtProcessorId.Text = DotNETHeroes.SecurityUtil.Hardware.Processor.ProcessorId();
         }
 
         private void btnHardDriveSN_Click(object sender, EventArgs e)
         {
-            txtHardDriveSN1.Text = HardDrive.VolumeSerialNumber();
+            txtHardDriveSN1.Text = DotNETHeroes.SecurityUtil.Hardware.HardDrive.VolumeSerialNumber();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            txtHardDriveSN2.Text = HardDrive.VolumeSerialNumber("D:");
+            txtHardDriveSN2.Text = DotNETHeroes.SecurityUtil.Hardware.HardDrive.VolumeSerialNumber("D:");
+        }
+
+        private void btnComputeHash_Click(object sender, EventArgs e)
+        {
+            txtHashing.Text = DotNETHeroes.SecurityUtil.Cryptography.Hashing.ComputeHash("Hello",
+                                                        DotNETHeroes.SecurityUtil.Cryptography.HashAlgorithmEnum.SHA256, 
+                                                        DotNETHeroes.SecurityUtil.Cryptography.FormatEnum.Hex);
         }
     }
 }
