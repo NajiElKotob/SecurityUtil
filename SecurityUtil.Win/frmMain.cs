@@ -38,5 +38,20 @@ namespace SecurityUtil.Win
                                                         DotNETHeroes.SecurityUtil.Cryptography.HashAlgorithmEnum.SHA256, 
                                                         DotNETHeroes.SecurityUtil.Cryptography.FormatEnum.Hex);
         }
+
+        private void btnMACAddresses_Click(object sender, EventArgs e)
+        {
+            string[] macAddresses = DotNETHeroes.SecurityUtil.Hardware.NIC.MacAddresses();
+            if (macAddresses != null)
+            {
+                cboMACAddresses.Items.AddRange(macAddresses);
+            }else
+            {
+                cboMACAddresses.Items.Add("No MAC address found!");
+            }
+
+            cboMACAddresses.SelectedIndex = 0;
+            
+        }
     }
 }

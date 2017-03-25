@@ -38,13 +38,15 @@
             this.btnVSN = new System.Windows.Forms.Button();
             this.txtHashing = new System.Windows.Forms.TextBox();
             this.btnComputeHash = new System.Windows.Forms.Button();
+            this.btnMACAddresses = new System.Windows.Forms.Button();
+            this.cboMACAddresses = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnGUID
             // 
-            this.btnGUID.Location = new System.Drawing.Point(12, 12);
+            this.btnGUID.Location = new System.Drawing.Point(10, 12);
             this.btnGUID.Name = "btnGUID";
-            this.btnGUID.Size = new System.Drawing.Size(156, 25);
+            this.btnGUID.Size = new System.Drawing.Size(167, 23);
             this.btnGUID.TabIndex = 0;
             this.btnGUID.Text = "GUID";
             this.btnGUID.UseVisualStyleBackColor = true;
@@ -52,16 +54,16 @@
             // 
             // txtGUID
             // 
-            this.txtGUID.Location = new System.Drawing.Point(174, 15);
+            this.txtGUID.Location = new System.Drawing.Point(197, 13);
             this.txtGUID.Name = "txtGUID";
-            this.txtGUID.Size = new System.Drawing.Size(269, 22);
+            this.txtGUID.Size = new System.Drawing.Size(236, 24);
             this.txtGUID.TabIndex = 1;
             // 
             // btnProcessorId
             // 
-            this.btnProcessorId.Location = new System.Drawing.Point(12, 67);
+            this.btnProcessorId.Location = new System.Drawing.Point(10, 67);
             this.btnProcessorId.Name = "btnProcessorId";
-            this.btnProcessorId.Size = new System.Drawing.Size(156, 23);
+            this.btnProcessorId.Size = new System.Drawing.Size(167, 23);
             this.btnProcessorId.TabIndex = 2;
             this.btnProcessorId.Text = "Processor Id";
             this.btnProcessorId.UseVisualStyleBackColor = true;
@@ -69,40 +71,40 @@
             // 
             // txtProcessorId
             // 
-            this.txtProcessorId.Location = new System.Drawing.Point(174, 68);
+            this.txtProcessorId.Location = new System.Drawing.Point(197, 66);
             this.txtProcessorId.Name = "txtProcessorId";
-            this.txtProcessorId.Size = new System.Drawing.Size(269, 22);
+            this.txtProcessorId.Size = new System.Drawing.Size(236, 24);
             this.txtProcessorId.TabIndex = 3;
             // 
             // txtHardDriveSN1
             // 
-            this.txtHardDriveSN1.Location = new System.Drawing.Point(174, 97);
+            this.txtHardDriveSN1.Location = new System.Drawing.Point(197, 95);
             this.txtHardDriveSN1.Name = "txtHardDriveSN1";
-            this.txtHardDriveSN1.Size = new System.Drawing.Size(269, 22);
+            this.txtHardDriveSN1.Size = new System.Drawing.Size(236, 24);
             this.txtHardDriveSN1.TabIndex = 5;
             // 
             // btnHardDriveSN
             // 
-            this.btnHardDriveSN.Location = new System.Drawing.Point(12, 96);
+            this.btnHardDriveSN.Location = new System.Drawing.Point(10, 96);
             this.btnHardDriveSN.Name = "btnHardDriveSN";
-            this.btnHardDriveSN.Size = new System.Drawing.Size(156, 23);
+            this.btnHardDriveSN.Size = new System.Drawing.Size(167, 23);
             this.btnHardDriveSN.TabIndex = 4;
-            this.btnHardDriveSN.Text = "Hard Drive VSN";
+            this.btnHardDriveSN.Text = "Hard Drive VSN (C:)";
             this.btnHardDriveSN.UseVisualStyleBackColor = true;
             this.btnHardDriveSN.Click += new System.EventHandler(this.btnHardDriveSN_Click);
             // 
             // txtHardDriveSN2
             // 
-            this.txtHardDriveSN2.Location = new System.Drawing.Point(174, 126);
+            this.txtHardDriveSN2.Location = new System.Drawing.Point(197, 124);
             this.txtHardDriveSN2.Name = "txtHardDriveSN2";
-            this.txtHardDriveSN2.Size = new System.Drawing.Size(269, 22);
+            this.txtHardDriveSN2.Size = new System.Drawing.Size(236, 24);
             this.txtHardDriveSN2.TabIndex = 7;
             // 
             // btnVSN
             // 
-            this.btnVSN.Location = new System.Drawing.Point(12, 125);
+            this.btnVSN.Location = new System.Drawing.Point(10, 125);
             this.btnVSN.Name = "btnVSN";
-            this.btnVSN.Size = new System.Drawing.Size(156, 23);
+            this.btnVSN.Size = new System.Drawing.Size(167, 23);
             this.btnVSN.TabIndex = 6;
             this.btnVSN.Text = "Hard Drive VSN (D:)";
             this.btnVSN.UseVisualStyleBackColor = true;
@@ -110,26 +112,46 @@
             // 
             // txtHashing
             // 
-            this.txtHashing.Location = new System.Drawing.Point(174, 176);
+            this.txtHashing.Location = new System.Drawing.Point(197, 211);
             this.txtHashing.Name = "txtHashing";
-            this.txtHashing.Size = new System.Drawing.Size(269, 22);
+            this.txtHashing.Size = new System.Drawing.Size(236, 24);
             this.txtHashing.TabIndex = 9;
             // 
             // btnComputeHash
             // 
-            this.btnComputeHash.Location = new System.Drawing.Point(12, 173);
+            this.btnComputeHash.Location = new System.Drawing.Point(10, 210);
             this.btnComputeHash.Name = "btnComputeHash";
-            this.btnComputeHash.Size = new System.Drawing.Size(156, 25);
+            this.btnComputeHash.Size = new System.Drawing.Size(167, 23);
             this.btnComputeHash.TabIndex = 8;
             this.btnComputeHash.Text = "Hashing \"Hello\"";
             this.btnComputeHash.UseVisualStyleBackColor = true;
             this.btnComputeHash.Click += new System.EventHandler(this.btnComputeHash_Click);
             // 
+            // btnMACAddresses
+            // 
+            this.btnMACAddresses.Location = new System.Drawing.Point(10, 154);
+            this.btnMACAddresses.Name = "btnMACAddresses";
+            this.btnMACAddresses.Size = new System.Drawing.Size(167, 23);
+            this.btnMACAddresses.TabIndex = 10;
+            this.btnMACAddresses.Text = "NICs MAC Addresses";
+            this.btnMACAddresses.UseVisualStyleBackColor = true;
+            this.btnMACAddresses.Click += new System.EventHandler(this.btnMACAddresses_Click);
+            // 
+            // cboMACAddresses
+            // 
+            this.cboMACAddresses.FormattingEnabled = true;
+            this.cboMACAddresses.Location = new System.Drawing.Point(197, 154);
+            this.cboMACAddresses.Name = "cboMACAddresses";
+            this.cboMACAddresses.Size = new System.Drawing.Size(236, 24);
+            this.cboMACAddresses.TabIndex = 11;
+            // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(629, 293);
+            this.ClientSize = new System.Drawing.Size(550, 293);
+            this.Controls.Add(this.cboMACAddresses);
+            this.Controls.Add(this.btnMACAddresses);
             this.Controls.Add(this.txtHashing);
             this.Controls.Add(this.btnComputeHash);
             this.Controls.Add(this.txtHardDriveSN2);
@@ -159,6 +181,8 @@
         private System.Windows.Forms.Button btnVSN;
         private System.Windows.Forms.TextBox txtHashing;
         private System.Windows.Forms.Button btnComputeHash;
+        private System.Windows.Forms.Button btnMACAddresses;
+        private System.Windows.Forms.ComboBox cboMACAddresses;
     }
 }
 

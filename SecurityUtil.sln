@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityUtil", "SecurityUti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityUtil.Win", "SecurityUtil.Win\SecurityUtil.Win.csproj", "{5A4284DE-E189-46B2-A923-413036240C14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityUtilTests", "SecurityUtilTests\SecurityUtilTests.csproj", "{AEE0E365-4191-4186-ACEA-80CE7E875C10}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityUtil.Tests", "SecurityUtilTests\SecurityUtil.Tests.csproj", "{AEE0E365-4191-4186-ACEA-80CE7E875C10}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErrorLogUtil", "ErrorLogUtil\ErrorLogUtil.csproj", "{75ACF8D5-9263-4AA3-91CC-FF8C9673A951}"
 EndProject

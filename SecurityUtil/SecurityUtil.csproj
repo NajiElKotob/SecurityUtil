@@ -33,6 +33,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Net" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,6 +46,7 @@
     <Compile Include="Cryptography\Hashing.cs" />
     <Compile Include="Cryptography\Randomness.cs" />
     <Compile Include="Hardware\HardDrive.cs" />
+    <Compile Include="Hardware\NIC.cs" />
     <Compile Include="Hardware\Processor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
