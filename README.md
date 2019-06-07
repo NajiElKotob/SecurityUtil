@@ -16,6 +16,9 @@ Implements a cryptographic and non-cryptographic Random Number Generator (RNG) u
 1. GenerateNewGuid
 2. RandomKey
 
+### PasswordGenerator Class
+1. GenerateNewPassword
+
 ## Hardware
 ### HardDrive Class
 1. VolumeSerialNumber
