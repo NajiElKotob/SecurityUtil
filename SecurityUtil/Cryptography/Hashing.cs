@@ -24,17 +24,19 @@ namespace DotNETHeroes.SecurityUtil.Cryptography
         Hex
     }
 
+    
     public static class Hashing
     {
-        /// <summary>
-        /// Compute a hash for the given plain text value and returns a hashed string
-        /// in base-64 (Default) or Hex format.
-        /// </summary>
-        /// <remarks>
-        /// HashAlgorithm Class https://msdn.microsoft.com/en-us/library/system.security.cryptography.hashalgorithm(v=vs.110).aspx
-        /// Convert.ToBase64String Method https://msdn.microsoft.com/en-us/library/dhx0d524
-        /// </remarks>
-        public static string ComputeHash(string plainText,
+
+            /// <summary>
+            /// Compute a hash for the given plain text value and returns a hashed string
+            /// in base-64 (Default) or Hex format.
+            /// </summary>
+            /// <remarks>
+            /// HashAlgorithm Class https://msdn.microsoft.com/en-us/library/system.security.cryptography.hashalgorithm(v=vs.110).aspx
+            /// Convert.ToBase64String Method https://msdn.microsoft.com/en-us/library/dhx0d524
+            /// </remarks>
+            public static string ComputeHash(string plainText,
                                         HashAlgorithmEnum hashAlgorithm,
                                         FormatEnum format = FormatEnum.Base64
                                         )

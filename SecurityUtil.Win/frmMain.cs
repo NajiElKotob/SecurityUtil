@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using DotNETHeroes.SecurityUtil;
-
+using DotNETHeroes.SecurityUtil.Cryptography;
 
 namespace SecurityUtil.Win
 {
@@ -52,6 +52,17 @@ namespace SecurityUtil.Win
 
             cboMACAddresses.SelectedIndex = 0;
             
+        }
+
+        private void btnGeneratePassword_Click(object sender, EventArgs e)
+        {
+            lblPassword.Text = DotNETHeroes.SecurityUtil.Cryptography.
+                PasswordGenerator.GenerateNewPassword(8, PasswordGenerator.PasswordCharacterSet.AlphanumericAndSymbols);
+        }
+
+        private void btnCopyPassword_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(lblPassword.Text);
         }
     }
 }

@@ -40,6 +40,9 @@
             this.btnComputeHash = new System.Windows.Forms.Button();
             this.btnMACAddresses = new System.Windows.Forms.Button();
             this.cboMACAddresses = new System.Windows.Forms.ComboBox();
+            this.btnGeneratePassword = new System.Windows.Forms.Button();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.btnCopyPassword = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnGUID
@@ -145,11 +148,43 @@
             this.cboMACAddresses.Size = new System.Drawing.Size(236, 24);
             this.cboMACAddresses.TabIndex = 11;
             // 
+            // btnGeneratePassword
+            // 
+            this.btnGeneratePassword.Location = new System.Drawing.Point(12, 249);
+            this.btnGeneratePassword.Name = "btnGeneratePassword";
+            this.btnGeneratePassword.Size = new System.Drawing.Size(167, 23);
+            this.btnGeneratePassword.TabIndex = 12;
+            this.btnGeneratePassword.Text = "Generate New Password";
+            this.btnGeneratePassword.UseVisualStyleBackColor = true;
+            this.btnGeneratePassword.Click += new System.EventHandler(this.btnGeneratePassword_Click);
+            // 
+            // lblPassword
+            // 
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Location = new System.Drawing.Point(232, 252);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(76, 17);
+            this.lblPassword.TabIndex = 13;
+            this.lblPassword.Text = "[Password]";
+            // 
+            // btnCopyPassword
+            // 
+            this.btnCopyPassword.Image = global::DotNETHeroes.SecurityUtil.Win.Properties.Resources.copy_16x16;
+            this.btnCopyPassword.Location = new System.Drawing.Point(197, 249);
+            this.btnCopyPassword.Name = "btnCopyPassword";
+            this.btnCopyPassword.Size = new System.Drawing.Size(29, 24);
+            this.btnCopyPassword.TabIndex = 14;
+            this.btnCopyPassword.UseVisualStyleBackColor = true;
+            this.btnCopyPassword.Click += new System.EventHandler(this.btnCopyPassword_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(550, 293);
+            this.Controls.Add(this.btnCopyPassword);
+            this.Controls.Add(this.lblPassword);
+            this.Controls.Add(this.btnGeneratePassword);
             this.Controls.Add(this.cboMACAddresses);
             this.Controls.Add(this.btnMACAddresses);
             this.Controls.Add(this.txtHashing);
@@ -183,6 +218,9 @@
         private System.Windows.Forms.Button btnComputeHash;
         private System.Windows.Forms.Button btnMACAddresses;
         private System.Windows.Forms.ComboBox cboMACAddresses;
+        private System.Windows.Forms.Button btnGeneratePassword;
+        private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.Button btnCopyPassword;
     }
 }
 
