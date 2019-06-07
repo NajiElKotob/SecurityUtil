@@ -22,3 +22,6 @@ Implements a cryptographic and non-cryptographic Random Number Generator (RNG) u
 
 ### Processor Class
 1. ProcessorId
+
+### NIC Class
+1. MacAddresses
